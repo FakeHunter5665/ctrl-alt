@@ -9,9 +9,10 @@ CORS(app)
 @app.route('/post', methods=['POST'])
 def post_example():
     data = request.json
-    res=calc(data)
+    msg=data.get('input_data')
+    res=calc(msg)
     print(res)
-    return str(res)
+    return (res)
 
 if __name__ == '__main__':
     app.run(debug=True)

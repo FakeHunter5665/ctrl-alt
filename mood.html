@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>WellNess</title>
+    <title>WellNest</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -128,7 +128,12 @@
 
 
     <!-- About Start -->
-   
+    <form id="dataForm">
+        <label for="inputData">Input Data:</label>
+        <input type="text" id="inputData" name="inputData">
+        <button type="submit">Send POST Request</button>
+    </form>
+    <div id="result" class="response"></div>
     <!-- About End -->
     
 
@@ -204,6 +209,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
